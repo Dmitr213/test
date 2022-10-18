@@ -19,3 +19,7 @@ add_document(doc_ref, new_doc)
 doc_ref = db.collection("users").document("aturing")
 new_doc = {"first": "Alan", "middle": "Mathison", "last": "Turing", "born": 1912}
 add_document(doc_ref, new_doc)
+
+
+def hello_world(request):
+    return "Hello World!"
