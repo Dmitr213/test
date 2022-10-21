@@ -1,5 +1,4 @@
 import os
-import asyncio
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 
@@ -22,7 +21,3 @@ async def webhook_handler(request):
             return "Error in 'webhook_handler': " + str(error)
     else:
         return "request.method in not POST"
-
-
-def webhook(request):
-    return asyncio.run(webhook_handler(request))
